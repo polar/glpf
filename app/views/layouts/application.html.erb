@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Glpf</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+
+  <!--Include YUI Loader: -->
+  <script type="text/javascript" src="http://yui.yahooapis.com/2.9.0/build/yuiloader/yuiloader-min.js"></script>
+
+  <!--Use YUI Loader to bring in your other dependencies: -->
+  <script type="text/javascript">
+      // Instantiate and configure YUI Loader:
+      (function() {
+          var loader = new YAHOO.util.YUILoader({
+              base: "",
+              require: ["base","fonts","grids","reset"],
+              loadOptional: false,
+              combine: true,
+              filter: "MIN",
+              allowRollup: true,
+              onSuccess: function() {
+                  //you can make use of all requested YUI modules
+                  //here.
+              }
+          });
+
+// Load the files using the insert() method.
+          loader.insert();
+      })();
+  </script>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
