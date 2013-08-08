@@ -12,5 +12,4 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require community_engine
 //= require_tree .
