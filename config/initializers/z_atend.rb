@@ -1,0 +1,1 @@
+puts "PAPERCLIP #{Paperclip::Attachment.default_options.inspect}"
