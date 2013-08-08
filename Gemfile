@@ -23,6 +23,7 @@ end
 
 gem 'jquery-rails'
 
+gem "aws-s3"
 gem "community_engine", :git => "https://github.com/polar/communityengine.git", :branch => "bborn"
 gem "thin"
 
