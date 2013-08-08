@@ -2,4 +2,101 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  #en: accepted_friendships: %{count} Accepted Friendships
+  accepted_friendships:
+    one: 1 Accepted Colleague Connection
+    other: "%{count} Accepted Colleague Connection"
+  #en: add_some_friends_to_get_started: Add some friends to get started!
+  add_some_friends_to_get_started: Connect with some colleagues to get started!
+  #en: dashboard_friends: Once you start adding friends, you'll be able to track their activity on %{site} here
+  dashboard_friends: "Once you start connecting with colleagues, you'll be able to track their activity on %{site} here"
+  #en: denied_friendships: Denied Friendships
+  denied_friendships: Denied Colleague Connections
+  #en: email_this_story_to_friends: "E-mail this story to friends"
+  email_this_story_to_friends: "E-mail this story to colleagues"
+  #en: email_to_friends: E-mail to friends
+  email_to_friends: E-mail to colleagues
+  #en: friends: Friends
+  friends: Colleagues
+  #en: friendship_could_not_be_created: Friendship could not be created
+  friendship_could_not_be_created: Colleague Connection could not be created
+  #en: friendship_request_accepted: Friendship request accepted!
+  friendship_request_accepted: Colleague connection request accepted!
+  #en: friendship_request_detail: Friendship request detail
+  friendship_request_detail: Colleague request detail
+  #en: friendship_requested: Requested friendship with %{friend}.
+  friendship_requested: "Requested connection with %{friend}."
+  #en: invite_some_friends: "Invite some friends!"
+  invite_some_friends: "Invite some colleagues!"
+  #en: invite_your_friends_to_join: Invite Your Friends To Join!
+  invite_your_friends_to_join: Invite Your Colleagues To Join!
+  #en: invited_friends: invited some friends to join!
+  invited_friends: invited some colleagues to join!
+  #en: my_friends: My Friends
+  my_friends: My Colleague Connections
+  #en: pending_friendships: Pending Friendships
+  pending_friendships: Pending Cooleague Connections
+  #en: people_who_sign_up_using_your_invitation_will_automatically_be_added_as_your_friends: People who sign up using your invitation will automatically be added as your friends
+  people_who_sign_up_using_your_invitation_will_automatically_be_added_as_your_friends: People who sign up using your invitation will automatically be connected to you as your colleague.
+  #en: people_who_sign_up_using_your_invitation_will_automatically_be_added_as_your_friends_on: People who sign up using your invitation will automatically be added as your friends on
+  people_who_sign_up_using_your_invitation_will_automatically_be_added_as_your_friends_on: People who sign up using your invitation will automatically be connected to you as your colleagues on
+  #en: request_friendship: Request friendship
+  request_friendship: Request connection
+  #en: requested_friendship_with: Requested friendship with
+  requested_friendship_with: Requested connection with
+  #en: requesting_friendship: Requesting friendship
+  requesting_friendship: Requesting connection
+  #en: send_this_story_to_friends: Send this message to friends
+  send_this_story_to_friends: Send this message to connected colleagues
+  #en: sorry_there_was_an_error_requesting_friendship: "Sorry, there was an error requesting friendship."
+  sorry_there_was_an_error_requesting_friendship: "Sorry, there was an error requesting a connection."
+  #en: the_friendship_was_accepted: The friendship was accepted.
+  the_friendship_was_accepted: The connection was accepted.
+  #en: the_friendship_was_denied: The friendship was denied.
+  the_friendship_was_denied: The connection was denied.
+  #en: this_friendship_is_pending: This Friendship is pending.
+  this_friendship_is_pending: This Colleague Connection is pending.
+  #en: to_start_adding_friends: To start adding friends, you can
+  to_start_adding_friends: "To start connecting with colleagues, you can"
+  #en: would_like_to_be_friends_with_you_on: %{user} would like to be friends with you on %{site}!
+  would_like_to_be_friends_with_you_on: "%{user} would like to connect with you on %{site}!"
+  #en: you_have_friends: You have %{count} friends
+  you_have_friends:
+    one: You have 1 colleague connection.
+    other: "You have %{count} colleage connections."
+  #en: you_have_pending_friendship_requests: You have pending friendship requests.
+  you_have_pending_friendship_requests: You have pending colleague connection requests.
+
+  # Forums : Projects
+  #en: added_to_a_forum_topic: "added to a forum topic:"
+  added_to_a_forum_topic: "added to a project topic:"
+  #en: create_new_forum: Create new forum
+  create_new_forum: Create new project
+  #en: delete_this_forum: Delete this forum
+  delete_this_forum: Delete this project
+  #en: edit_forum: Edit forum
+  edit_forum: Edit project
+  #en: new_forum: New Forum
+  new_forum: New Project
+  #en: forum: Forum
+  forum: Project
+  #en: forums: Forums
+  forums: Projects
+  #en: optional_keywords_describing_this_forum_separated_by_commas: optional keywords describing this forum, separated by commas
+  optional_keywords_describing_this_forum_separated_by_commas: optional keywords describing this project, separated by commas
+  #en: page_tips: "Pages are a good place to put static content that you would rather not post to the blog or the forums."
+  page_tips: "Pages are a good place to put static content that you would rather not post to the blog or the project forums."
+  #en: save_forum: Save Forum
+  save_forum: Save Project
+  #en: this_forum_is_still_getting_started: "This forum is still getting started ... here are some blog posts to get you thinking ..."
+  this_forum_is_still_getting_started: "This project is still getting started ... here are some blog posts..."
+
+  # Project Posts
+  blogs: Colleague Blogs
+
+  # People
+  people: Colleagues
+  #en: every_person_has_something_to_say: Every single person has something to say, something to give, something that will help someone else.  Join in!
+  every_person_has_something_to_say: "Your colleagues want to know what you are thinking. Please post to your blog."
+
+  community_tagline: Protecting Our Water

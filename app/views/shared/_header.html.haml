@@ -3,7 +3,7 @@
     %div
       %a{:href=>url_for(:subdomain => 'ru', :only_path => false ), :title=>"#{configatron.community_locale} russian translation"}= "rus"
       %a{:href=>url_for(:subdomain => 'en', :only_path =>false), :title=>"english translation" }= "eng"
-
+  #glpfHeaderImage
   %h1
     %a{:href=>home_url, :title=>"#{configatron.community_name}"}= configatron.community_name
   - if logged_in?
@@ -20,7 +20,7 @@
       - Category.find(:all).each do |c|
         = topnav_tab c.name, {:url => category_path(c), :section => [c.name]}
       = topnav_tab :forums.l, { :url => forums_path, :section => ['forums'] }
-      = topnav_tab :popular.l, { :url => popular_path, :section => ['popular'] }
+      = topnav_tab :blogs.l, { :url => popular_path, :section => ['popular'] }
       = topnav_tab :people.l, { :url => users_path, :section => ['users'] }
       - if current_user 
         = topnav_tab :my_profile.l, { :url => user_path(current_user), :section => ['my_profile']}   

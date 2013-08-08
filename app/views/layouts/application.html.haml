@@ -13,7 +13,8 @@
     - if @rss_title && @rss_url
       = auto_discovery_link_tag(:rss, @rss_url, {:title => @rss_title})
       
-    = render :partial => "shared/scripts_and_styles"      
+    = render :partial => "shared/scripts_and_styles"
+    = stylesheet_link_tag "glpf"
     
   %body
     -unless configatron.auth_providers.facebook.key.blank?    
@@ -54,8 +55,9 @@
           - if @rss_title && @rss_url
             %li#rss= link_to :rss.l, @rss_url, {:title => @rss_title}
 
-        %p
-          = :community_tagline.l
+        .glpf_logo
+          %p
+            = :community_tagline.l
 
     = render :partial => "shared/end_javascript"
     = yield :end_javascript
