@@ -42,9 +42,6 @@ module Glpf
     # like if you have constraints or database-specific column types
     # config.active_record.schema_format = :sql
 
-    # Heroku
-    config.assets.initialize_on_precompile=false
-
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
   end
