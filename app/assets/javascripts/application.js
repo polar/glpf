@@ -11,5 +11,5 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+jQuery.noConflict();
 //= require jquery_ujs
-//= require_tree .
