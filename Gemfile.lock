@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/polar/communityengine.git
-  revision: 54b138ac628c4312cf93af6e2e49aa4ebdeedbe2
+  revision: 2844511098d6db970d4113565e54d3c86eec726c
   branch: rails4
   specs:
     community_engine (3.0.0.pre1)
