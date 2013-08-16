@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/polar/communityengine.git
-  revision: 2844511098d6db970d4113565e54d3c86eec726c
+  revision: d54cecaaae9433894f9ec1a6af02d656a7b3a84a
   branch: rails4
   specs:
     community_engine (3.0.0.pre1)
@@ -111,7 +111,7 @@ GEM
       multi_json (~> 1.0)
     faraday (0.8.8)
       multipart-post (~> 1.2.0)
-    friendly_id (5.0.0.beta1)
+    friendly_id (5.0.0.beta2)
     haml (4.0.3)
       tilt
     hashie (2.0.5)

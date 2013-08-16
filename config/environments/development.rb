@@ -21,6 +21,9 @@ Glpf::Application.configure do
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
 
+  # Raise an error on page load if there are pending migrations
+  config.active_record.migration_error = :page_load
+
   # Do not compress assets
   config.assets.compress = false
 
