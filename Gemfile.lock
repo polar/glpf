@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/polar/communityengine.git
-  revision: d54cecaaae9433894f9ec1a6af02d656a7b3a84a
+  revision: 9b9ed07ad384b8a9ed7ef77e3eb3e0d0f47e5161
   branch: rails4
   specs:
     community_engine (3.0.0.pre1)
@@ -107,11 +107,11 @@ GEM
     dynamic_form (1.1.4)
     erubis (2.7.0)
     eventmachine (1.0.3)
-    execjs (1.4.0)
-      multi_json (~> 1.0)
+    execjs (2.0.0)
     faraday (0.8.8)
       multipart-post (~> 1.2.0)
-    friendly_id (5.0.0.beta2)
+    friendly_id (5.0.0.beta3)
+      activerecord (~> 4.0.0)
     haml (4.0.3)
       tilt
     hashie (2.0.5)
@@ -152,7 +152,7 @@ GEM
     polyamorous (0.6.3)
       activerecord (>= 3.0)
     polyglot (0.3.3)
-    power_enum (2.0.1)
+    power_enum (2.0.2)
       rails (~> 4.0.0)
     prototype-rails (3.2.0)
       railties (>= 3.2.0.beta, < 5.0)
@@ -215,7 +215,7 @@ GEM
     tilt (1.4.1)
     tinymce-rails (4.0.2)
       railties (>= 3.1.1)
-    treetop (1.4.14)
+    treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.37)
