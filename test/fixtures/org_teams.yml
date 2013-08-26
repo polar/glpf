@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: Team One
+  description: This is Team One
+  category: team_one
+
+two:
+  name: Team Two
+  description: This is Team Two
+  category: team_two

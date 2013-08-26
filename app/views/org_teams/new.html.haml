@@ -1,0 +1,11 @@
+.yui-b
+  = render :partial => 'shared/admin_nav'
+
+#yui-main
+  .yui-b
+    -box do
+      %h3= :new_team.l
+
+      = render :partial => "form"
+
+      = link_to :back.l, org_teams_path

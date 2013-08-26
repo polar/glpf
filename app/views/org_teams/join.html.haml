@@ -1,0 +1,14 @@
+- if admin?
+  .yui-b
+    = render :partial => 'shared/admin_nav'
+
+#yui-main
+  .yui-b
+    - box do
+      %h3="#{:join.l} #{:team.l} #{@org_team.name}"
+
+      =form_for :@org_team, { :html => {:class => "MainForm"}} do |f|
+        %label= "#{current_user.login}, #{:please_press_the_button_below_to_join_this_team.l}."
+        %p
+          =f.submit :join.l
+

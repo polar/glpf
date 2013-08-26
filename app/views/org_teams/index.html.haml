@@ -1,0 +1,40 @@
+- if admin?
+  .yui-b
+    = render :partial => 'shared/admin_nav'
+
+#yui-main
+  .yui-b
+    -box do
+      %h3 Teams
+
+      %table{:width=>"100%"}
+        %thead
+          %tr
+            %th=:name.l
+            %th=:description.l
+            %th=:members.l
+            %th=:posts.l
+            %th{colspan: "3"}=:actions.l
+        %tbody
+          - for org_team in @org_teams
+            %tr
+              %td= org_team.name
+              %td= org_team.description
+              %td= org_team.users.count
+              %td= org_team.category.posts.count
+              %td
+                = link_to :show.l, org_team_path(org_team)
+                - if ! org_team.member?(current_user)
+                  |
+                  = link_to :join.l, join_org_team_path(org_team)
+                = link_to :team_blog.l, category_path(org_team.category)
+                - if admin?
+                  |
+                  = link_to :edit.l, edit_org_team_path(org_team) if admin?
+                  |
+                  = link_to :destroy.l, org_team_path(org_team), :data => {:confirm => :are_you_sure.l}, :method => :delete if admin?
+
+
+      %br
+
+      = link_to :new_team.l, new_org_team_path if admin?

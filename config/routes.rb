@@ -2,6 +2,13 @@ Glpf::Application.routes.draw do
 
   mount CommunityEngine::Engine => "/"
 
+  resources :org_teams do
+    member do
+      get :join
+      post :join, :action => :create_membership
+    end
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

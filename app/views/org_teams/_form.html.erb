@@ -1,0 +1,23 @@
+<%= form_for(@org_team, :html => {:class => "MainForm"}) do |f| %>
+  <% if @org_team.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@org_team.errors.count, "error") %> prohibited this org_team from being saved:</h2>
+
+      <ul>
+      <% @org_team.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= f.label :name.l %>
+  <%=f.text_field :name %>
+
+  <%= f.label :description.l %>
+  <%= f.text_area :description %>
+
+  <p>
+    <%= f.submit :create_team.l %>
+  </p>
+<% end %>

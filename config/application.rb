@@ -1,8 +1,10 @@
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
+require "decorators"
 
 Bundler.require(:default, Rails.env)
+
 
 module Glpf
   class Application < Rails::Application
@@ -45,4 +47,6 @@ module Glpf
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
   end
+
+  Decorators.register! Rails.root
 end

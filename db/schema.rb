@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130815132846) do
+ActiveRecord::Schema.define(version: 20130826111743) do
 
   create_table "activities", force: true do |t|
     t.integer  "user_id"
@@ -244,6 +244,21 @@ ActiveRecord::Schema.define(version: 20130815132846) do
     t.integer "topic_id"
     t.integer "user_id"
     t.boolean "active",   default: true
+  end
+
+  create_table "org_teams", force: true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.integer  "category_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "org_teams_users", force: true do |t|
+    t.integer  "org_team_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "pages", force: true do |t|

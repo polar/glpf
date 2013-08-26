@@ -1,0 +1,30 @@
+- if admin?
+  .yui-b
+    = render :partial => 'shared/admin_nav'
+
+#yui-main
+  .yui-b
+    - box do
+      %h3="#{:team.l} #{@org_team.name}"
+      %table
+        %tbody
+          %tr
+            %th= :name.l
+            %td= @org_team.name
+          %tr
+            %th= :description.l
+            %td= @org_team.description
+      %table
+        %thead
+          %tr
+            %th= :members.l
+        %tbody
+          - for member in @org_team.users
+            %tr
+              %td= link_to member.login, user_path(member)
+      %br
+      = link_to "Edit", edit_org_team_path(@org_team) if admin?
+      = "|" if admin?
+      = link_to "Join",join_org_team_path(@org_team)
+      |
+      = link_to "All", org_teams_path

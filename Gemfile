@@ -13,6 +13,8 @@ gem 'jquery-rails'
 
 gem "aws-sdk"
 
+gem "decorators", "~> 1.0.0"
+
 gem "community_engine", :git => "https://github.com/polar/communityengine.git", :branch => "rails4"
 #gem "community_engine", :path => "/home/polar/src/communityengine"
 
@@ -20,3 +22,10 @@ gem "community_engine", :git => "https://github.com/polar/communityengine.git", 
 # Heroku Integration for Logs and Assets in Rails 4
 gem "rails_12factor"
 gem "thin"
+
+group :test do
+  gem "omniauth-facebook"
+  gem 'sqlite3'
+  gem "minitest"
+  gem "minitest-reporters"
+end

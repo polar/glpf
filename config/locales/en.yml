@@ -8,10 +8,20 @@ en:
     other: "%{count} Accepted Colleague Connection"
   #en: add_some_friends_to_get_started: Add some friends to get started!
   add_some_friends_to_get_started: Connect with some colleagues to get started!
+  #en: categories: Categories
+  categories: Team Blogs
+  #en: category: Category
+  category: Team Blog
+  #en: category_was_successfully_created: Category was successfully created.
+  category_was_successfully_created: Team Blog was successfully created.
+  #en: create_team
+  create_team: Create Team
   #en: dashboard_friends: Once you start adding friends, you'll be able to track their activity on %{site} here
   dashboard_friends: "Once you start connecting with colleagues, you'll be able to track their activity on %{site} here"
   #en: denied_friendships: Denied Friendships
   denied_friendships: Denied Colleague Connections
+  #en: editing_category: Editing category
+  editing_category: Editing Team Blog
   #en: email_this_story_to_friends: "E-mail this story to friends"
   email_this_story_to_friends: "E-mail this story to colleagues"
   #en: email_to_friends: E-mail to friends
@@ -32,14 +42,22 @@ en:
   invite_your_friends_to_join: Invite Your Colleagues To Join!
   #en: invited_friends: invited some friends to join!
   invited_friends: invited some colleagues to join!
+  #en: join
+  join: Join
   #en: my_friends: My Friends
   my_friends: My Colleague Connections
+  #en: new_category: New category
+  new_category: New Team Blog
+  #en: new_post_for_category
+  new_post_for_category: "New %{category} Blog Post"
   #en: pending_friendships: Pending Friendships
   pending_friendships: Pending Cooleague Connections
   #en: people_who_sign_up_using_your_invitation_will_automatically_be_added_as_your_friends: People who sign up using your invitation will automatically be added as your friends
   people_who_sign_up_using_your_invitation_will_automatically_be_added_as_your_friends: People who sign up using your invitation will automatically be connected to you as your colleague.
   #en: people_who_sign_up_using_your_invitation_will_automatically_be_added_as_your_friends_on: People who sign up using your invitation will automatically be added as your friends on
   people_who_sign_up_using_your_invitation_will_automatically_be_added_as_your_friends_on: People who sign up using your invitation will automatically be connected to you as your colleagues on
+  #en: please_press_the_button_below_to_join_this_team
+  please_press_the_button_below_to_join_this_team: please press the button below to join this team
   #en: request_friendship: Request friendship
   request_friendship: Request connection
   #en: requested_friendship_with: Requested friendship with
@@ -48,8 +66,16 @@ en:
   requesting_friendship: Requesting connection
   #en: send_this_story_to_friends: Send this message to friends
   send_this_story_to_friends: Send this message to connected colleagues
+  #en: showing_categories: Showing categories
+  showing_categories: Showing Team Blogs
   #en: sorry_there_was_an_error_requesting_friendship: "Sorry, there was an error requesting friendship."
   sorry_there_was_an_error_requesting_friendship: "Sorry, there was an error requesting a connection."
+  #en: team
+  new_team: New Team
+  #en: team
+  team: Team
+  #en: teams
+  teams: Teams
   #en: the_friendship_was_accepted: The friendship was accepted.
   the_friendship_was_accepted: The connection was accepted.
   #en: the_friendship_was_denied: The friendship was denied.
@@ -58,6 +84,8 @@ en:
   this_friendship_is_pending: This Colleague Connection is pending.
   #en: to_start_adding_friends: To start adding friends, you can
   to_start_adding_friends: "To start connecting with colleagues, you can"
+  #en: want_to_post_in_this_category: Want to post in this category?
+  want_to_post_in_this_category: Want to post in this Team Blog?
   #en: would_like_to_be_friends_with_you_on: %{user} would like to be friends with you on %{site}!
   would_like_to_be_friends_with_you_on: "%{user} would like to connect with you on %{site}!"
   #en: you_have_friends: You have %{count} friends
@@ -100,3 +128,11 @@ en:
   every_person_has_something_to_say: "Your colleagues want to know what you are thinking. Please post to your blog."
 
   community_tagline: Protecting Our Water
+
+  username_label: "(Required: Your username may contain letters, numbers, underbar, dash, and spaces.)"
+
+  you_are_already_a_member_of: "You are already a member of %{name}."
+  you_are_now_a_member_of: "You are now a member of %{name}."
+  memberships: Memberships
+  team_blog: Blog
+  your_personal_blog: Your Personal Blog
